@@ -2,56 +2,62 @@
 .contenedor-testimonio {
     width: 100%;
     max-width: 1170px;
-    /* Cambiado a max-width */
-    height: 370px;
     margin: 10px auto 50px;
-    /* Margen superior e inferior automático */
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
     box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0.09);
-    /* Uso de rgba para transparencia */
+    padding: 20px;
 }
 
 h1 {
     text-align: center;
-    margin: 0 auto;
-
-
-
 }
 
-/* Estilos de imagen */
 .imagen-testimonio {
-    height: 100%;
-    width: auto;
-    /* Cambiado de width: auto a height: 100% y width: auto */
+    height: auto;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
 }
 
-/* Estilos del contenedor de texto */
 .contenedor-texto-testimonio {
     text-align: center;
-    padding: 40px;
+    padding: 20px;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     line-height: 1.5;
 }
 
-/* Estilos del nombre del testimonio */
 .nombre-testimonio {
     font-size: 1.3rem;
+    margin-bottom: 5px;
 }
 
-/* Estilos del cargo del testimonio */
 .cargo-testimonio {
-    font-size: 1.3rem;
-    margin-top: 15px;
-    padding-bottom: 30px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
 }
 
-/* Estilos del texto del testimonio */
 .texto-testimonio {
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: justify;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .contenedor-testimonio {
+        padding: 10px;
+    }
+
+    .imagen-testimonio {
+        max-width: 200px;
+    }
+
+    .nombre-testimonio,
+    .cargo-testimonio,
+    .texto-testimonio {
+        font-size: 0.9rem;
+    }
 }
