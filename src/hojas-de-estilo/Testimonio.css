@@ -1,38 +1,48 @@
+/* Estilos base */
 .contenedor-testimonio {
-    width: 1170px;
+    width: 100%;
+    max-width: 1170px;
+    /* Cambiado a max-width */
     height: 370px;
-    margin: 10px 10px 50px;
+    margin: 10px auto 50px;
+    /* Margen superior e inferior automático */
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #ffffff;
-    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+    box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0.09);
+    /* Uso de rgba para transparencia */
 }
 
+/* Estilos de imagen */
 .imagen-testimonio {
     height: 100%;
     width: auto;
-
+    /* Cambiado de width: auto a height: 100% y width: auto */
 }
 
+/* Estilos del contenedor de texto */
 .contenedor-texto-testimonio {
     text-align: center;
     padding: 40px;
-    font-family: Lato, sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 1.5;
 }
 
+/* Estilos del nombre del testimonio */
 .nombre-testimonio {
     font-size: 1.3rem;
 }
 
+/* Estilos del cargo del testimonio */
 .cargo-testimonio {
     font-size: 1.3rem;
     margin-top: 15px;
     padding-bottom: 30px;
 }
 
+/* Estilos del texto del testimonio */
 .texto-testimonio {
     font-size: 1.1rem;
     text-align: justify;

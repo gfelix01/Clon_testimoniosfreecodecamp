@@ -3,8 +3,8 @@ import Testimonio from './componentes/Testimonio'
 
 function App () {
   return (
-    <div className='App'>
-      <div className='contenedor-principal'>
+    <main className='App'>
+      <section className='contenedor-principal'>
         <h1>Esto es lo que dicen nuestros alumnos sobre FreeCodeCamp:</h1>
         <Testimonio
           nombre='Gabriel Felix '
@@ -16,8 +16,8 @@ function App () {
         />
 
         <Testimonio
-          nombre=' Sarah Chima'
-          pais=' Nigeria'
+          nombre='Sarah Chima'
+          pais='Nigeria'
           imagen='sara'
           cargo='Software Developer'
           empresa='ChatDesk'
@@ -25,16 +25,15 @@ function App () {
         />
 
         <Testimonio
-          nombre=' Shawn Wang'
+          nombre='Shawn Wang'
           pais='Singapur'
           imagen='shawn'
           cargo='Software Developer'
           empresa='Amazon'
           testimonio='"Da miedo cambiar de carrera. Solo gané la confianza de que podía programar trabajando a través de los cientos de horas de lecciones gratuitas en freeCodeCamp. Dentro de un año tuve un trabajo de seis cifras como ingeniero de software. freeCodeCamp cambió mi vida." '
         />
-
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
 
