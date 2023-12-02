@@ -1,17 +1,15 @@
-import React from 'react'
-import '../hojas-de-estilo/Testimonio.css'
+import React from 'react';
+import '../hojas-de-estilo/Testimonio.css';
 
-function Testimonio (props) {
+function Testimonio(props) {
   return (
-    <div className='contenedor-testimonio'>
-
+    <figure className='contenedor-testimonio'>
       <img
         className='imagen-testimonio'
         src={require(`../imagenes/testimonio-${props.imagen}.png`)}
         alt='Mi-foto'
       />
-
-      <div className='contenedor-texto-testimonio'>
+      <figcaption className='contenedor-texto-testimonio'>
         <p className='nombre-testimonio'>
           <strong>{props.nombre}</strong> en {props.pais}
         </p>
@@ -21,10 +19,9 @@ function Testimonio (props) {
         <p className='Texto-testimonio'>
           "{props.testimonio}"
         </p>
-
-      </div>
-    </div>
-  )
+      </figcaption>
+    </figure>
+  );
 }
 
-export default Testimonio
+export default Testimonio;
