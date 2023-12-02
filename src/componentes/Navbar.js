@@ -1,7 +1,7 @@
-import React from 'react';
-import '../hojas-de-estilo/Navbar.css'; // Estilos del Navbar
+import React from 'react'
+import '../hojas-de-estilo/Navbar.css' // Estilos del Navbar
 
-function Navbar() {
+function Navbar () {
   return (
     <nav className='navbar'>
       <div className='logo'>
@@ -24,7 +24,7 @@ function Navbar() {
         </li>
       </ul>
     </nav>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar
