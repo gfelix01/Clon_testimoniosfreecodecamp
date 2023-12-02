@@ -4,8 +4,7 @@ import '../hojas-de-estilo/Navbar.css' // Estilos del Navbar
 function Navbar () {
   const handleNavigation = (event) => {
     event.preventDefault()
-    // Aquí puedes definir lo que deseas que haga cada enlace al ser clicado
-    // Por ejemplo: redirigir a otra página o ejecutar una acción
+   window.location.href = '/' + event.target.id
   }
 
   return (
@@ -18,13 +17,13 @@ function Navbar () {
       </div>
       <ul className='nav-links'>
         <li>
-          <button onClick={handleNavigation}>Inicio</button>
+          <button onClick={handleNavigation}>Idiomas</button>
         </li>
         <li>
-          <button onClick={handleNavigation}>Cursos</button>
+          <button onClick={handleNavigation}>Menu</button>
         </li>
         <li>
-          <button onClick={handleNavigation}>Blog</button>
+          <button onClick={handleNavigation}>Perfil</button>
         </li>
       </ul>
     </nav>
