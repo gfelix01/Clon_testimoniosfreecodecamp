@@ -23,9 +23,9 @@
     display: inline-block;
     margin-right: 30px;
     text-align: right;
-    /* Alinea el texto a la derecha */
+
     vertical-align: bottom;
-    /* Alinea el texto verticalmente en la parte inferior */
+
 }
 
 .navbar .nav-links a {
@@ -36,5 +36,3 @@
     flex: 1 0 33%;
     gap: 10px;
 }
-
-/* Para ocupar todo el ancho del elemento li */

@@ -1,30 +1,34 @@
-import React from 'react'
-import '../hojas-de-estilo/Navbar.css' // Estilos del Navbar
+import React from 'react';
+import '../hojas-de-estilo/Navbar.css'; // Estilos del Navbar
 
-function Navbar () {
+function Navbar() {
+  const handleNavigation = (event) => {
+    event.preventDefault();
+    // Aquí puedes definir lo que deseas que haga cada enlace al ser clicado
+    // Por ejemplo: redirigir a otra página o ejecutar una acción
+  };
+
   return (
     <nav className='navbar'>
       <div className='logo'>
         <img
-          src='	https://testimonios-gjc.netlify.app/static/media/freecodecamp-logo.5486935b905c7949600c.png' // Ruta a tu logotipo
-          alt='FreeCodeCamp Logo' // Texto alternativo para accesibilidad
+          src='https://testimonios-gjc.netlify.app/static/media/freecodecamp-logo.5486935b905c7949600c.png'
+          alt='FreeCodeCamp Logo'
         />
       </div>
       <ul className='nav-links'>
-        {/* Agrega aquí los enlaces para la navegación */}
-        {/* Por ejemplo: */}
         <li>
-          <a href='#'>Inicio</a>
+          <button onClick={handleNavigation}>Inicio</button>
         </li>
         <li>
-          <a href='#'>Cursos</a>
+          <button onClick={handleNavigation}>Cursos</button>
         </li>
         <li>
-          <a href='#'>Blog</a>
+          <button onClick={handleNavigation}>Blog</button>
         </li>
       </ul>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;
