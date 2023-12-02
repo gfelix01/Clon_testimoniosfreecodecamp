@@ -1,12 +1,12 @@
-import React from 'react';
-import '../hojas-de-estilo/Navbar.css'; // Estilos del Navbar
+import React from 'react'
+import '../hojas-de-estilo/Navbar.css' // Estilos del Navbar
 
-function Navbar() {
+function Navbar () {
   const handleNavigation = (event) => {
-    event.preventDefault();
+    event.preventDefault()
     // Aquí puedes definir lo que deseas que haga cada enlace al ser clicado
     // Por ejemplo: redirigir a otra página o ejecutar una acción
-  };
+  }
 
   return (
     <nav className='navbar'>
@@ -28,7 +28,7 @@ function Navbar() {
         </li>
       </ul>
     </nav>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar
