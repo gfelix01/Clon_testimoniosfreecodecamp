@@ -1,38 +1,89 @@
-/* Estilos para el Navbar */
 .navbar {
     align-items: center;
-    background-color: #1b1b32;
+    background-color: #0A0A23;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.logo {
+    flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 27px;
+    overflow: hidden;
+    margin-right: 20%;
+
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    position: relative;
+
+}
+
+.search-bar input {
+    padding: 15px 50px 8px 35px;
+    background-color: #3b3b4f;
     width: 100%;
+    color: #ffffff;
+    border: none;
+
 }
 
-.navbar .logo img {
-    height: 48px;
-    margin: 32px 0;
+.search-bar input::placeholder {
+    color: #d0d0cd;
+    font-size: large;
 }
 
-.navbar .nav-links {
+.search-bar svg {
+    position: absolute;
+    left: 10px;
+    color: #ffffff;
+
+}
+
+
+.input-text::placeholder {
+    color: #D0D0CD;
+    font-size: large;
+}
+
+
+.nav-links {
+    display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
+    justify-content: space-around;
+    text-align: center;
+    width: 10%;
+    height: 10px;
+
+
 
 }
 
-.navbar .nav-links li {
-    display: inline-block;
-    margin-right: 30px;
-    text-align: right;
-
-    vertical-align: bottom;
-
+.nav-links li {
+    margin-right: 20px;
 }
 
-.navbar .nav-links a {
+.nav-links a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 18px;
-    flex: 1 0 33%;
-    gap: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links .icon {
+    font-size: 20px;
+    margin-right: 5px;
 }

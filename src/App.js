@@ -1,22 +1,20 @@
 import React from 'react'
-import './App.css' // Estilos globales si los tienes
-import Navbar from './componentes/Navbar.js' // Importa tu componente Navbar
+import './App.css'
+import Navbar from './componentes/Navbar.js'
 import Testimonio from './componentes/Testimonio'
-import datosTestimonios from './componentes/datosTestimonios.js' // Importa los datos de testimonios
+import datosTestimonios from '../src/data/testimonio.json'
 
 function App () {
   return (
     <div className='App'>
-      {/* Navbar en el encabezado */}
+
       <header>
         <Navbar />
       </header>
 
-      {/* Contenido principal */}
       <main className='contenedor-principal'>
         <h1>Esto es lo que dicen nuestros alumnos sobre FreeCodeCamp:</h1>
 
-        {/* Mapeo de datos para renderizar los testimonios */}
         {datosTestimonios.map((testimonio, index) => (
           <Testimonio
             key={index}
