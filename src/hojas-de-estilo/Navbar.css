@@ -1,3 +1,4 @@
+/* Estilos base para ambos dispositivos */
 .navbar {
     align-items: center;
     background-color: #0A0A23;
@@ -18,16 +19,13 @@
     height: 27px;
     overflow: hidden;
     margin-right: 20%;
-
 }
-
 
 .search-bar {
     display: flex;
     align-items: center;
     width: 30%;
     position: relative;
-
 }
 
 .search-bar input {
@@ -36,7 +34,6 @@
     width: 100%;
     color: #ffffff;
     border: none;
-
 }
 
 .search-bar input::placeholder {
@@ -48,15 +45,12 @@
     position: absolute;
     left: 10px;
     color: #ffffff;
-
 }
-
 
 .input-text::placeholder {
     color: #D0D0CD;
     font-size: large;
 }
-
 
 .nav-links {
     display: flex;
@@ -65,9 +59,6 @@
     text-align: center;
     width: 10%;
     height: 10px;
-
-
-
 }
 
 .nav-links li {
@@ -86,4 +77,22 @@
 .nav-links .icon {
     font-size: 20px;
     margin-right: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .search-bar,
+    .nav-links {
+        display: none;
+    }
+
+
 }

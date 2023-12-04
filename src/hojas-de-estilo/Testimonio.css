@@ -22,7 +22,7 @@ h1 {
     height: max-content;
     width: 100%;
     max-width: 300px;
-    object-fit: fill;
+    object-fit: contain;
 
 }
 
@@ -55,11 +55,14 @@ h1 {
 @media (max-width: 768px) {
     .contenedor-testimonio {
         padding: 2%;
+        height: calc(100vw - 4%);
+        max-height: calc(100vw - 4%) !important;
     }
 
     .imagen-testimonio {
-        max-width: 100%;
+        max-width: 50%;
         height: auto;
+        max-height: 30vh !important;
     }
 
     .nombre-testimonio,
