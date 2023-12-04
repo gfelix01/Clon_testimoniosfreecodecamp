@@ -89,10 +89,27 @@
         margin-bottom: 20px;
     }
 
-    .search-bar,
-    .nav-links {
+    .search-bar {
         display: none;
     }
 
+    .nav-links {
+        display: flex;
 
+        justify-content: space-around;
+
+        align-items: center;
+        width: 100%;
+        padding: 5px 0 0;
+    }
+
+    .nav-links li {
+        margin-right: 20px;
+
+    }
+
+    .imagen-testimonio {
+        border-radius: 0;
+
+    }
 }
