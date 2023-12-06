@@ -10,13 +10,13 @@ function Testimonio (props) {
         alt='foto'
       />
       <figcaption className='contenedor-texto-testimonio'>
-        <p className='nombre-testimonio'>
+        <h3 className='nombre-testimonio'>
           <strong>{props.nombre}</strong> en {props.pais}
-        </p>
+        </h3>
         <p className='cargo-testimonio'>
           {props.cargo} en <strong>{props.empresa}</strong>
         </p>
-        <p className='Texto-testimonio'>
+        <p className='texto-testimonio'>
           "{props.testimonio}"
         </p>
       </figcaption>

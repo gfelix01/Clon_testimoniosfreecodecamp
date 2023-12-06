@@ -24,7 +24,7 @@ function Navbar () {
   return (
     <nav className='navbar'>
       <div className='search-bar'>
-        <FontAwesomeIcon icon={faSearch} />
+        <FontAwesomeIcon  id ="icon-search" icon={faSearch} />
         <input className='input-text' type='text' placeholder='Search 9,000+ tutorials' />
       </div>
       <div className='logo'>
