@@ -4,7 +4,6 @@
     background-color: #0A0A23;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     padding: 10px;
 }
 
@@ -87,7 +86,7 @@
     .navbar {
 
         align-items: center;
-        padding: 10px;
+        padding: 5px;
     }
 
     .nav-links .icon {
@@ -96,7 +95,7 @@
     }
 
     .logo {
-        margin-bottom: 20px;
+
         order: -1;
     }
 
