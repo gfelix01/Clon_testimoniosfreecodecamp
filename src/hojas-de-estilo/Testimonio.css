@@ -23,8 +23,7 @@ h1 {
 
 .imagen-testimonio {
     width: 100%;
-
-    max-width: 350px;
+    max-width: 300px;
     height: fit-content;
     border-radius: 0;
 }
