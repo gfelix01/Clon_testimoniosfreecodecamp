@@ -43,7 +43,7 @@ h1 {
     text-align: center;
     font-size: 1.3rem;
     margin-bottom: 5px;
-    font-weight: 400;
+    font-weight: 400px;
 }
 
 .cargo-testimonio {
@@ -58,12 +58,12 @@ h1 {
     font-size: 1.2rem;
     text-align: justify;
     margin: auto;
-    /* Esto centrará horizontalmente el bloque de texto */
     line-height: 1.5rem;
 }
 
 
 @media only screen and (max-width: 600px) {
+
     .texto-testimonio {
         font-size: 3rem;
         line-height: 1.3rem;
