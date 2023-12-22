@@ -15,7 +15,7 @@
 }
 
 .logo img {
-    height: 27px;
+    height: 25px;
     overflow: hidden;
     margin-right: 26%;
 }
@@ -30,7 +30,7 @@
 }
 
 .search-bar input {
-    padding: 15px 50px 8px 35px;
+    padding: 15px 10px 8px 35px;
     font-family: 'Sanserif';
     background-color: #3b3b4f;
     width: 100%;
@@ -40,20 +40,17 @@
 }
 
 .search-bar input::placeholder {
-    color: #d0d0cd;
+    color: #cecdd0;
     font-size: large;
 }
 
 .search-bar svg {
-    position: absolute;
+    position: fixed;
     left: 10px;
     color: #ffffff;
 }
 
-.input-text::placeholder {
-    color: #D0D0CD;
-    font-size: large;
-}
+
 
 .nav-links {
     display: flex;
@@ -66,7 +63,7 @@
 
 .nav-links li {
     margin-right: 30px;
-    height: auto;
+    height: max-content;
 }
 
 .nav-links a {

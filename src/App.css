@@ -1,8 +1,9 @@
 @media (max-width: 768px) {
   .imagen-testimonio {
-    width: 10rem;
+    width: 15rem;
     height: auto;
-    border-radius: 12rem;
+    border-radius: 15rem;
+    --image-size: min(320px, 350px);
 
   }
 
@@ -11,9 +12,6 @@
     margin: 20px 0;
   }
 
-  .App {
-    padding: 20px;
-  }
 
   .contenedor-principal {
     min-height: auto;
