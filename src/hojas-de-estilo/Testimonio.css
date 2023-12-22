@@ -1,21 +1,23 @@
 :root {
-    font-family: 'Lato', sans-serif;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Zeyada', 'Courier New', Courier, monospace;
+    --font-primary: 'Lato', sans-serif;
+    --font-secondary: 'Oswald', sans-serif;
+    --font-tertiary: 'Zeyada', 'Courier New', Courier, monospace;
 }
 
 
-
 .contenedor-testimonio {
-    max-width: 1150px;
-    margin: 10px auto 50px;
+    max-width: 1180px;
+    margin: 15px auto 75px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #0A0A23;
     box-shadow: 0 3px 13px 1px rgba(0, 0, 0, 0.09);
-    padding: 20px;
+    padding: 0;
+    /* Eliminar el relleno para que la imagen esté al borde */
 }
+
+
 
 h1 {
     font-family: 'Lato', sans-serif;
@@ -31,11 +33,13 @@ h1 {
 
 .imagen-testimonio {
 
-    max-width: 300px;
+    max-width: 250px;
     height: auto;
     border-radius: 0;
-    padding: 0px 2px 0px -10px;
-    margin: -1rem;
+    margin-bottom: 0;
+    padding-right: 0;
+    margin-right: auto;
+
 }
 
 .contenedor-texto-testimonio {
@@ -115,8 +119,8 @@ h1 {
     }
 
     .imagen-testimonio {
-        max-width: 500px;
-        margin-bottom: 0;
+        max-width: 350px;
+        margin-bottom: 10;
         padding-right: 0%;
 
     }
