@@ -31,10 +31,12 @@
 
 .search-bar input {
     padding: 15px 50px 8px 35px;
+    font-family: 'Sanserif';
     background-color: #3b3b4f;
     width: 100%;
     color: #ffffff;
     border: none;
+
 }
 
 .search-bar input::placeholder {
@@ -58,7 +60,7 @@
     list-style: none;
     justify-content: space-around;
     text-align: center;
-    width: 10%;
+    width: 5%;
     height: 10px;
 }
 
@@ -85,9 +87,12 @@
 
 @media only screen and (max-width: 768px) {
     .navbar {
-
         align-items: center;
-        padding: 5px;
+        padding: 0 5px;
+        width: 100%;
+
+
+
     }
 
     .nav-links .icon {
@@ -96,8 +101,8 @@
     }
 
     .logo {
-
         order: -1;
+        max-height: 50px;
     }
 
     #icon-search {
@@ -118,6 +123,7 @@
 
         width: 100%;
         padding: 5px 0;
+        height: 200%;
     }
 
     .nav-links li {

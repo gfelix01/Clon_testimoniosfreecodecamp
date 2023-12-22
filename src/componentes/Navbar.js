@@ -25,7 +25,7 @@ function Navbar () {
     <nav className='navbar'>
       <div className='search-bar'>
         <FontAwesomeIcon  id ="icon-search" icon={faSearch} />
-        <input className='input-text' type='text' placeholder='Search 9,000+ tutorials' />
+        <input className='input-text' type='search' maxLength={512} spellCheck={false} placeholder='Search 9,000+ tutorials' />
       </div>
       <div className='logo'>
         <img
